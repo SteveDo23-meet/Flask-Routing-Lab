@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
     <meta charset="UTF-8">
     <title>Product</title>
+
 </head>
 <body>
+    <h1 id = "da">
+        Here you can see everything you need to play basketball 
+    </h1>
+<div class="topnav">
+  <a class="active" href="{{ url_for('idk') }}">Home</a>
+  <a href="{{ url_for('idok') }}">Products</a>
+  <a href="{{ url_for('cart') }}">Cart</a>
+  <a href="/">Comming soon</a>
+</div>
+<h2 id = "f2">Some of the top sellers !</h2>
+<p id = "f2">Move the mouse over the image below to open the dropdown content.</p>
 
+<div class="dropdown">
+  <a href="/dior_low"><img src="../static/jordan.jpg" alt="Cinque Terre" width="150" height="100">
+  </a>
+  <div class="dropdown-content">
+  <img src="../static/jordan.jpg" alt="Cinque Terre" width="350" height="270">
+  <div class="desc">Air Jordan Dior 1 Low</div>
+  </div>
+</div>
+
+<div class="dropdown">
+  <a href="{{ url_for('chicago') }}"><img src="../static/chi.webp" alt="Cinque Terre" width="150" height="100">
+  </a>
+  <div class="dropdown-content">
+  <img src="../static/chi.webp" alt="Cinque Terre" width="350" height="270">
+  <div class="desc">Air Jordan Chicago Trophy Room</div>
+  </div>
+</div>
 </body>
 </html>

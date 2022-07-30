@@ -1,10 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Cart</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">   
+ <meta charset="UTF-8">
+    <title>Your's Cart</title>
 </head>
 <body>
 
+    <h1 id = "box">
+      Your Cart 
+    </h1>
+    <h2>
+      Here you can see her all your items that you want to buy :      
+
+    </h2>
+
+  <div class="card">
+  <h1>Air Jordan Dior 1 Low</h1>
+  <img src="../static/jordan.jpg" alt="rf" style="width:20%">
+  <p class="price">$1999.99</p>
+</div>
+
+<div class="card">
+  <h1>Air Jordan 1 Retro High Chicago</h1>
+  <img src="../static/chi.webp" alt="rf" style="width:20%">
+  <p class="price">$2,547.00</p>
+</div>
+
+<h1>
+  Total : $ 4546.99
+</h1>
+
+<a  href="{{ url_for ('pay') }}"><button>Checkout</button> 
+<a  href="{{ url_for('idk') }}"><button>Home</button>
+<a  href="{{ url_for('idok') }}"><button>Products</button>
+
+
+<style>
+  body{
+ margin: 0;
+ padding: 0;
+ background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+ height: 100vh;
+ 
+}
+.card {
+  text-align: center;
+}
+#box{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+}
+button {
+  margin : 0 auto;
+  display: block;
+  width: 20%;
+}
+
+button{
+  display:inline;
+}
+</style>
 </body>
 </html>

@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">    <meta charset="UTF-8">
+    <title> Golden Hoops </title>
+<style>
+    .box {color : purple; }
+</style>
 </head>
 <body>
+
+<h1 class = "box" > Meet aBay ! </h1>
+<h2 class = "box"> Here you can buy every thing you need yo play <b>basketball</b></h2>   
+<h2 class = "box"
+> lets see some of what you can but<h2>
+<div class="card">
+  <h1>Air Jordan Dior 1 Low</h1>
+  <img src="../static/jordan.jpg" alt="rf" style="width:20%">
+  <p class="price">$1999.99</p>
+  <p>Just buy it so i can go to vaction to LA</p>
+  <a id = "pop" href="{{ url_for('cart') }}">Add To Cart</a>
+</div>
+<div class="card">
+  <h1>Air Jordan 1 Retro High Chicago</h1>
+  <img src="../static/chi.webp" alt="rf" style="width:20%">
+  <p class="price">$2,547.00</p>
+  <p>Just buy it so i can go to vaction to NYC</p>
+  <a id = "pop" href="{{ url_for('cart') }}">Add To Cart</a>
+</div>
+
+</div>
+<a id = "button" href="{{ url_for('idok') }}">More Products...</a>
 
 </body>
 </html>
